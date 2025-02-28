@@ -1,0 +1,136 @@
+header {
+    display: flex;
+    justify-content: start;
+    gap: 20%;
+    height: 80px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.name_logo {
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+#logo-c {
+    font-size: 30px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(40, 39, 39);
+    font-family: "Caveat", cursive;
+
+}
+
+#Clyster {
+    color: #abacad;
+    font-size: 20px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(40, 39, 39);
+    font-family: "Caveat", cursive;
+
+}
+
+#cloths {
+    color: #abacad;
+    font-size: 20px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(40, 39, 39);
+    font-family: "Caveat", cursive;
+
+}
+
+.clth-menu-list ul {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+
+}
+
+.clth-menu-list ul a {
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 3px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #06965c;
+    font-weight: 700;
+    font-family: "Protest Revolution", sans-serif;
+
+
+}
+
+.clth-menu-list ul a li {
+    position: relative;
+    padding: 2px;
+    overflow: hidden;
+}
+
+.clth-menu-list ul a li::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #06965c;
+    width: 100%;
+    bottom: 0;
+    left: -100%;
+    transition: 0.5s ease-in-out;
+
+}
+
+.clth-menu-list ul a li:hover::after {
+    left: 0;
+}
+
+/* drop down section css */
+.main-drop-down-section .maindrop-down {
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 3px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #06965c;
+    font-weight: 700;
+    font-family: "Protest Revolution", sans-serif;
+}
+
+.main-drop-down-section {
+    position: relative;
+}
+
+.maindrop-down {
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+    padding-left: 0;
+}
+
+.submenu_dropDown {
+    position: absolute;
+    background-color: #06965c;
+    top: 20px;
+    width: 200px;
+    flex-direction: column;
+    gap: 0 !important;
+    display: none !important;
+    padding: 15px 10px;
+    list-style: none;
+    z-index: 10;
+    font-family: "Protest Revolution", sans-serif;
+    line-height: 30px;
+}
+
+.submenu_dropDown a li {
+    color: white;
+
+}
+
+.main-drop-down-section:hover .submenu_dropDown {
+    display: block !important;
+}
+
+.loginRegis {
+
+    font-family: "Protest Revolution", sans-serif;
+
+}

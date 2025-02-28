@@ -1,0 +1,139 @@
+.main-banner {
+    height: 100vh;
+    display: flex;
+}
+
+.right-side-box {
+    background-color: #fcfcfc;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-side-box h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    position: relative;
+    font-family: "Bokor", system-ui;
+
+}
+
+.right-side-box h1::after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    width: 48%;
+    height: 2px;
+    bottom: 50%;
+    transform: translateY(-50%);
+}
+
+.right-side-box span {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Protest Revolution", sans-serif;
+
+}
+
+.main-banner .jacket-content {
+    width: 30%;
+    background-color: #1d1d1d;
+    height: 30vh;
+    width: 100%;
+    color: #f4efef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+}
+
+.main-banner .jacket-content h2 {
+    width: 70%;
+    word-spacing: 3px;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+.main-banner .jacket-content span {
+    width: 70%;
+    letter-spacing: 3px;
+    font-family: "Bokor", system-ui;
+    font-size: 17px;
+    color: #7b8081;
+    font-size: 12px;
+}
+
+.left-side-box {
+    width: 30%;
+}
+
+.left-side-box .jacket-box {
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://img.freepik.com/premium-photo/beautiful-plain-color-bomber-jacket-white-background_1059430-1790.jpg");
+}
+
+.Home-main-btn {
+    color: white;
+    background-color: #06965c;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 15%;
+    margin-top: 5px;
+    font-size: 17px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: "Protest Revolution", sans-serif;
+
+}
+
+
+/* swipre home  */
+.hometop-swiper {
+    margin: 40px 0px;
+
+}
+
+
+.hometop-swiper .swiper .swiper-wrapper {
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.hometop-swiper .hoodei-heading {
+    text-align: center;
+    color: #06965c;
+    font-size: 80px;
+    font-family: "Protest Revolution", sans-serif;
+    margin: 20px 0;
+}
+
+.hometop-swiper .swiper-slide img {
+    width: 100%;
+}
+
+/* about */
+
+.about_btn {
+    color: white;
+    background-color: #06965c;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 20%;
+    margin-top: 5px;
+    font-size: 17px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: "Protest Revolution", sans-serif;
+
+}

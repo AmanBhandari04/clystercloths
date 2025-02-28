@@ -1,0 +1,31 @@
+.clth_main_about {
+    display: flex;
+    height: 100vh;
+}
+
+.about_img {
+    width: 50%;
+}
+
+.clth_main_about .about_img img {
+    height: 100%;
+    width: 100%;
+}
+
+.about_content {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about_content h3 {
+    font-size: 30px;
+    width: 80%;
+}
+
+.about_content p {
+    font-size: 20px;
+    width: 80%;
+}

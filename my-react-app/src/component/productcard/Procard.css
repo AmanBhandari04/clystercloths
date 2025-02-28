@@ -1,0 +1,151 @@
+.image-box {
+    padding: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 55%;
+    margin: auto;
+    border-radius: 100px 0 100px 0;
+    overflow: hidden;
+}
+
+
+.details-of-product {
+    width: 70%;
+    margin: auto;
+}
+
+.details-of-product h3 {
+    color: #06965c;
+    font-weight: 800;
+    font-size: 19px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    font-family: "Protest Revolution", sans-serif;
+
+}
+
+.details-of-product p {
+    color: #4d6a5e;
+    font-weight: 800;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-family: "Protest Revolution", sans-serif;
+    text-transform: uppercase;
+}
+
+.details-of-product h5 {
+    color: #4d6a5e;
+    font-weight: 800;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-family: "Protest Revolution", sans-serif;
+    text-transform: uppercase;
+}
+
+.price-and-view {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.price-and-view h4 {
+    font-size: 19px;
+}
+
+/* Container for the product cards */
+.product-card-grid {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    /* background: #f9f9f9; */
+}
+
+/* Grid layout for product cards */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 items per row on desktop */
+    gap: 16px;
+    width: 100%;
+    max-width: 1200px;
+    /* padding: 16px; */
+}
+
+/* Product card styling */
+.productcard-maindiv {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.productcard-maindiv:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect on hover */
+}
+
+/* Image box */
+.image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Product details */
+.details-of-product {
+    padding: 16px;
+    /* text-align: center; */
+}
+
+
+
+/* Price and button */
+.price-and-view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-top: 1px solid #ddd;
+}
+
+.price-and-view h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0c51af;
+    display: flex;
+    align-items: center;
+}
+
+.price-and-view .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.price-and-view .btn:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 items per row on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        grid-template-columns: repeat(1, 1fr);
+        /* 1 item per row on mobile */
+    }
+}

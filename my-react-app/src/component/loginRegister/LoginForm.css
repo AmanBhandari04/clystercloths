@@ -1,0 +1,68 @@
+.main-login {
+    color: gray;
+    background-color: rgba(17, 17, 17, 0.289);
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login_row {
+    background-color: white;
+    width: 30%;
+    display: flex;
+    border-radius: 20px;
+    position: relative;
+}
+
+.Login_row .crossslogin {
+    position: absolute;
+    right: -1%;
+    top: -1%;
+    font-size: 30px;
+    color: green;
+    background: rgba(254, 251, 251, 0.529);
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    padding: 2px;
+}
+
+/* .Login_row .first_lay {
+    background: url("https://img.freepik.com/free-psd/luxury-men-s-fashion-template-design_23-2150855870.jpg ");
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 40vh;
+    border-radius: 20px;
+
+} */
+
+.second_lay {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+.second_lay h4 {
+    font-size: 17px;
+}
+
+.second_lay svg {
+    font-size: 20px;
+}
+
+.second_lay input::placeholder {
+    color: green;
+}
+
+.second_lay input {
+    width: 70%;
+    margin: auto;
+}
