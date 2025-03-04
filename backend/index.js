@@ -6,6 +6,8 @@ import mongoose from "mongoose";
 import router from './route/clothRoutes.js'
 import authRoutes from './route/authRoutes.js'
 import cors from 'cors';
+import path from 'path';
+
 // config env
 dotenv.config();
 // rest object
@@ -18,27 +20,35 @@ Db_connect()
 
 // middlewares
 app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 app.use(morgan('dev'))
 app.use(cors());
 // Serve static files (for uploaded images)
 app.use('/uploads', express.static('uploads'));
 
-mongoose.connect('mongodb://localhost:27017/clothsdb', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});
+
+
+
+// Serve frontend build files
+const __dirname = path.resolve();
+console.log(__dirname)
+app.use(express.static(path.join(__dirname, "../my-react-app/dist")));
+app.use('/api/auth', authRoutes);
+app.use('/api/cloths', router);
+
 
 
 
 // rest api
-app.get("/", (req, res) => {
-    res.send({
-        message: 'Welcome to Clothing App'
-    })
-})
+// app.get("/", (req, res) => {
+//     res.send({
+//         message: 'Welcome to Clothing App'
+//     })
+// })
 // use the routes
-app.use('/api/auth', authRoutes);
-app.use('/api/cloths', router);
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../my-react-app/dist", "index.html"));
+});
 // port 
 const PORT = process.env.PORT || 8080
 
